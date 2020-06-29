@@ -1,3 +1,44 @@
-﻿  Bank.cpp
-d:\3年次\ネットワークプログラミング\#3\networkproject\networkproject\bank.cpp(84): warning C4326: 'main' の戻り値の型には、'int' を使用してください。'void' は使用できません
-  NetWorkProject.vcxproj -> D:\3年次\ネットワークプログラミング\#3\NetWorkProject\Debug\NetWorkProject.exe
+﻿  AcceptThread.cpp
+  Bank.cpp
+  chat.cpp
+d:\3年次\networkproject\networkproject\chat.cpp(108): warning C4326: 'main' の戻り値の型には、'int' を使用してください。'void' は使用できません
+  ClientThread.cpp
+  CriticalSection.cpp
+  InetAddress.cpp
+d:\3年次\networkproject\networkproject\inetaddress.cpp(16): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1831): note: 'inet_addr' の宣言を確認してください
+d:\3年次\networkproject\networkproject\inetaddress.cpp(18): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(2219): note: 'gethostbyname' の宣言を確認してください
+d:\3年次\networkproject\networkproject\inetaddress.cpp(32): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: 'inet_ntoa' の宣言を確認してください
+  InetSocketAddress.cpp
+  ServerSocket.cpp
+  ServerThread.cpp
+  c:\boost_1_73_0\include\boost-1_73\boost\bind.hpp(41): note: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+  Socket.cpp
+  SocketImpl.cpp
+d:\3年次\networkproject\networkproject\socketimpl.cpp(118): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: 'inet_ntoa' の宣言を確認してください
+  Test.cpp
+  Thread.cpp
+  コードを生成中...
+  chat.c
+Debug\chat.obj : warning LNK4042: オブジェクトの指定が重複しています。余分なものは無視されます。
+InetAddress.obj : error LNK2019: 未解決の外部シンボル __imp__inet_addr@4 が関数 "public: __thiscall InetAddress::InetAddress(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0InetAddress@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) で参照されました。
+InetAddress.obj : error LNK2019: 未解決の外部シンボル __imp__inet_ntoa@4 が関数 "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall InetAddress::getHostAddress(void)const " (?getHostAddress@InetAddress@@QBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) で参照されました。
+SocketImpl.obj : error LNK2001: 外部シンボル "__imp__inet_ntoa@4" は未解決です。
+InetAddress.obj : error LNK2019: 未解決の外部シンボル __imp__gethostbyname@4 が関数 "public: __thiscall InetAddress::InetAddress(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0InetAddress@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__accept@12 が関数 "public: class SocketImpl * __thiscall SocketImpl::accept(void)" (?accept@SocketImpl@@QAEPAV1@XZ) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__bind@12 が関数 "public: void __thiscall SocketImpl::bind(int)" (?bind@SocketImpl@@QAEXH@Z) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__closesocket@4 が関数 "public: void __thiscall SocketImpl::bind(int)" (?bind@SocketImpl@@QAEXH@Z) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__connect@12 が関数 "public: void __thiscall SocketImpl::connect(class InetSocketAddress const &)" (?connect@SocketImpl@@QAEXABVInetSocketAddress@@@Z) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__getsockname@12 が関数 "public: class InetSocketAddress __thiscall SocketImpl::getLocalInetSocketAddress(void)const " (?getLocalInetSocketAddress@SocketImpl@@QBE?AVInetSocketAddress@@XZ) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__htonl@4 が関数 "public: void __thiscall SocketImpl::bind(int)" (?bind@SocketImpl@@QAEXH@Z) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__htons@4 が関数 "public: void __thiscall SocketImpl::bind(int)" (?bind@SocketImpl@@QAEXH@Z) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__listen@8 が関数 "public: void __thiscall SocketImpl::listen(int)" (?listen@SocketImpl@@QAEXH@Z) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__recv@16 が関数 "public: int __thiscall SocketImpl::receive(void *,int)" (?receive@SocketImpl@@QAEHPAXH@Z) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__send@16 が関数 "public: int __thiscall SocketImpl::send(void const *,int)" (?send@SocketImpl@@QAEHPBXH@Z) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__shutdown@8 が関数 "public: void __thiscall SocketImpl::shutdown(int)" (?shutdown@SocketImpl@@QAEXH@Z) で参照されました。
+SocketImpl.obj : error LNK2019: 未解決の外部シンボル __imp__socket@12 が関数 "public: void __thiscall SocketImpl::bind(int)" (?bind@SocketImpl@@QAEXH@Z) で参照されました。
+LIBCMTD.lib(exe_main.obj) : error LNK2019: 未解決の外部シンボル _main が関数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) で参照されました。
+D:\3年次\NetWorkProject\Debug\NetWorkProject.exe : fatal error LNK1120: 16 件の未解決の外部参照

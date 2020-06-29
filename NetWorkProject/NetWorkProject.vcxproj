@@ -92,6 +92,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\boost_1_73_0\include\boost-1_73</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -108,10 +109,12 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>C:\boost_1_73_0\include\boost-1_73</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\boost_1_73_0\stage\lib\x64</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -125,6 +128,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\boost_1_73_0\include\boost-1_73</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,37 +148,54 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\boost_1_73_0\include\boost-1_73</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\boost_1_73_0\stage\lib\x64</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AcceptThread.cpp" />
     <ClCompile Include="Bank.cpp" />
     <ClCompile Include="chat.c" />
     <ClCompile Include="chat.cpp" />
+    <ClCompile Include="ChatClientThread.cpp" />
+    <ClCompile Include="ClientThread.cpp" />
     <ClCompile Include="CriticalSection.cpp" />
     <ClCompile Include="InetAddress.cpp" />
     <ClCompile Include="InetSocketAddress.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MessageBuffer.cpp" />
     <ClCompile Include="ServerSocket.cpp" />
+    <ClCompile Include="ServerThread.cpp" />
     <ClCompile Include="Socket.cpp" />
     <ClCompile Include="SocketImpl.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="Thread.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AcceptThread.h" />
+    <ClInclude Include="ChatClientThread.h" />
+    <ClInclude Include="ClientThread.h" />
     <ClInclude Include="CriticalSection.h" />
     <ClInclude Include="InetAddress.h" />
     <ClInclude Include="InetSocketAddress.h" />
     <ClInclude Include="IRunnable.h" />
+    <ClInclude Include="MessageBuffer.h" />
+    <ClInclude Include="resource2.h" />
     <ClInclude Include="ServerSocket.h" />
+    <ClInclude Include="ServerThread.h" />
     <ClInclude Include="Socket.h" />
     <ClInclude Include="SocketExeption.h" />
     <ClInclude Include="SocketImpl.h" />
     <ClInclude Include="Thread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NetWorkProject.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

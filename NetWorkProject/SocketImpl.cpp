@@ -36,7 +36,7 @@ void SocketImpl::connect(const InetSocketAddress & address)
 	//サーバーへのアドレスを作成
 	SOCKADDR_IN serverAddress;
 	std::memset(&serverAddress, 0, sizeof(SOCKADDR_IN));
-	serverAddress.sin_family = AF_IMPLINK;
+	serverAddress.sin_family = AF_INET;
 	serverAddress.sin_port = htons(address.getPort());
 	serverAddress.sin_addr.s_addr = address.getInetAddress().getAddress();
 

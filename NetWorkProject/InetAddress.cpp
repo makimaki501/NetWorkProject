@@ -2,7 +2,7 @@
 #include<winsock2.h>
 
 //無効なIPアドレス
-const unsigned long InetAddress::None = INADDR_NONE;
+const unsigned long InetAddress::NONE = INADDR_NONE;
 
 //コンストラクタ
 InetAddress::InetAddress(unsigned int address) :

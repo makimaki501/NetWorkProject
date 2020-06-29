@@ -75,26 +75,26 @@ public:
 		do {
 			//銀行から100円引き出す
 			std::cout << "鈴木君50円引き出し\n";
-			money = SakuraBank.dispenseCash(51);
+			money = SakuraBank.dispenseCash(50);
 		} while (money >= 0);
 	}
 };
-
-void main()
-{
-	Tanaka tanaka; //田中君スレッド
-	Suzuki suzuki; //鈴木君スレッド
-
-	//田中君スレッド開始
-	tanaka.start();
-	//鈴木君スレッド開始
-	suzuki.start();
-
-	//田中君の終了を待つ
-	tanaka.join();
-	//鈴木君の終了を待つ
-	suzuki.join();
-
-	//銀行の現金を表示
-	SakuraBank.printCash();
-}
+//
+//void main()
+//{
+//	Tanaka tanaka; //田中君スレッド
+//	Suzuki suzuki; //鈴木君スレッド
+//
+//	//田中君スレッド開始
+//	tanaka.start();
+//	//鈴木君スレッド開始
+//	suzuki.start();
+//
+//	//田中君の終了を待つ
+//	tanaka.join();
+//	//鈴木君の終了を待つ
+//	suzuki.join();
+//
+//	//銀行の現金を表示
+//	SakuraBank.printCash();
+//}

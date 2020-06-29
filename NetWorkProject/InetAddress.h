@@ -7,7 +7,7 @@
 class InetAddress {
 public:
 	//コンストラクタ
-	InetAddress(unsigned int address = InetAddress::None);
+	InetAddress(unsigned int address = InetAddress::NONE);
 	//コンストラクタ
 	InetAddress(const std::string &address);
 	//ホストアドレスの取得
@@ -20,7 +20,7 @@ public:
 	unsigned long getAddress()const;
 public:
 	//無効なIPアドレス
-	const static unsigned long None;
+	const static unsigned long NONE;
 private:
 	//IPアドレス
 	unsigned long mIPAddress;
